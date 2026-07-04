@@ -25,18 +25,21 @@ A lightweight, multithreaded HTTP directory fuzzer written in Python. This tool 
    cd QuickFuzz
 
 
-# Install the required dependencies: 
+## Install the required dependencies: 
 
     pip install requests
 
 
-# Usage
+## Usage
 
 Run the script from the command line by providing a base URL and a wordlist.
-    Bashpython fuzzer.py -u <TARGET_URL> -w <PATH_TO_WORDLIST>
+    python fuzzer.py -u <TARGET_URL> -w <PATH_TO_WORDLIST>
 
 Arguments               ArgumentShort         Description                                                Required                                                                            --url                      -u               The base URL to fuzz (e.g., http://example.com)                Yes                                                                               --wordlist                 -w               Path to the text file containing the wordlist                  Yes
 
+### Arguments :     --url/-u & --wordlist/-w
+### Description :   -u(The Base URL to fuzz) & -w(Path to the text file containing the wordlist)
+### Required :      -u(Yes) & -w(Yes)
 
 ## Example
     
