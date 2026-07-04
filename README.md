@@ -35,11 +35,10 @@ A lightweight, multithreaded HTTP directory fuzzer written in Python. This tool 
 Run the script from the command line by providing a base URL and a wordlist.
     python fuzzer.py -u <TARGET_URL> -w <PATH_TO_WORDLIST>
 
-Arguments               ArgumentShort         Description                                                Required                                                                            --url                      -u               The base URL to fuzz (e.g., http://example.com)                Yes                                                                               --wordlist                 -w               Path to the text file containing the wordlist                  Yes
+Argument,Short Flag,Description,Required,Example
+--url,-u,The base URL of the target web server.,Yes,http://192.168.1.5
+--wordlist,-w,The local path to the text file containing the directory wordlist.,Yes,/usr/share/wordlists/dirb/common.txtArguments               ArgumentShort         Description                                                Required                                                                            --url                      -u               The base URL to fuzz (e.g., http://example.com)                Yes                                                                               --wordlist                 -w               Path to the text file containing the wordlist                  Yes
 
-### Arguments :     --url/-u & --wordlist/-w
-### Description :   -u(The Base URL to fuzz) & -w(Path to the text file containing the wordlist)
-### Required :      -u(Yes) & -w(Yes)
 
 ## Example
     
